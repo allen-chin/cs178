@@ -1,0 +1,35 @@
+02:25:00 Started by timer
+02:25:00 Running as SYSTEM
+02:25:00 Building in workspace /home/allen/cs178
+02:25:00 No credentials specified
+02:25:00  > git rev-parse --is-inside-work-tree # timeout=10
+02:25:00 Fetching changes from the remote Git repository
+02:25:00  > git config remote.origin.url https://github.com/allen-chin/cs178 # timeout=10
+02:25:01 Fetching upstream changes from https://github.com/allen-chin/cs178
+02:25:01  > git --version # timeout=10
+02:25:01  > git fetch --tags --force --progress -- https://github.com/allen-chin/cs178 +refs/heads/*:refs/remotes/origin/*
+02:25:01  > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+02:25:01  > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+02:25:01 Checking out Revision 9192d50b3284a70f72a3fa41aecd5f901564e020 (refs/remotes/origin/master)
+02:25:01  > git config core.sparsecheckout # timeout=10
+02:25:01  > git checkout -f 9192d50b3284a70f72a3fa41aecd5f901564e020
+02:25:01 Commit message: "Update Makefile"
+02:25:01  > git rev-list --no-walk 9192d50b3284a70f72a3fa41aecd5f901564e020 # timeout=10
+02:25:01 [cs178] $ /bin/sh -xe /usr/local/tomcat/temp/jenkins8958440044864577330.sh
+02:25:01 + cd hw2/Count3s
+02:25:01 + ant
+02:25:01 Buildfile: /home/allen/cs178/hw2/Count3s/build.xml
+02:25:02 
+02:25:02 compile:
+02:25:02     [javac] /home/allen/cs178/hw2/Count3s/build.xml:13: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+02:25:02 
+02:25:02 Count3s:
+02:25:02 
+02:25:02 runCount3s:
+02:25:11      [java] 31
+02:25:11 
+02:25:11 main:
+02:25:11 
+02:25:11 BUILD SUCCESSFUL
+02:25:11 Total time: 9 seconds
+02:25:11 Finished: SUCCESS
