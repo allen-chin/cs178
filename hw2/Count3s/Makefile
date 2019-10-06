@@ -8,14 +8,14 @@
 CC = gcc
 CCFLAGS = -Wall
 
-runCount3s: countThrees
+runCount3s: clean countThrees
 	./countThrees
 
 Count3s: countThrees.c readInt32BitLE.o
-	$(CC) $(CCFLAGS) -o countThrees countThrees.c readInt32BitLE.o
+	$(C C) $(CCFLAGS) -o countThrees countThrees.c readInt32BitLE.o
 
 readInt32BitLE.o: readInt32BitLE.c readInt32BitLE.h
-	$(CC) $(CCFLAGS) -c readInt32BitLE.c readInt32BitLE.h
+	$(CC) $(CCFLAGS)-c readInt32BitLE.c readInt32BitLE.h
 
 clean:
-	rm -f CountThrees *.o
+	rm -f *.o countThrees
